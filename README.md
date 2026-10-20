@@ -1,59 +1,86 @@
-# 6 Studi Kasus dan Implementasi — Informatics Practitioner Lecture Series
+Nama : Algedian Syahtria Wangsa NPM : G1A024071 Program Studi : Teknik Informatika Instansi : Universitas Bengkulu
+# Tugas Machine Learning
 
-Folder ini memisahkan notebook sumber menjadi **6 file Python**, satu file untuk setiap pertemuan. Isi kode studi kasus dipertahankan dari file notebook yang diberikan.
+## Deskripsi
+Repository ini berisi kumpulan tugas praktikum dan studi kasus dari enam pertemuan yang membahas penerapan teknologi komputasi, Artificial Intelligence (AI), Machine Learning, analisis data, visualisasi, dan sistem informasi geografis. Setiap pertemuan memiliki studi kasus dan implementasi program menggunakan Python sesuai dengan materi yang dipelajari.
 
-## Daftar file
+## Daftar Pertemuan
 
-1. `Pertemuan_1_Analitik_AI_PT_Maju_Bersama.py` — analitik dan AI untuk studi kasus perusahaan dengan data sintetis.
-2. `Pertemuan_2_HPC_Simulasi_Evakuasi.py` — mini-LINPACK dan simulasi evakuasi; dapat dijalankan serial, MPI opsional.
-3. `Pertemuan_3_GIS_Karir_dan_Persaingan.py` — studi kasus GIS: lokasi gerai, laporan warga, klasifikasi tutupan lahan, dan luas lahan.
-4. `Pertemuan_4_Introduction_to_Machine_Learning.py` — kumpulan implementasi konsep machine learning.
-5. `Pertemuan_5_IMK_dan_Visualisasi_Data.py` — studi kasus dashboard penjualan dan prinsip IMK/visualisasi.
-6. `Pertemuan_6_AI_Pemantauan_Deforestasi.py` — simulasi pemantauan deforestasi dengan citra dan AI.
+### Pertemuan 1 — PT Maju Bersama: Analitik Penjualan dan AI
+Membahas pemanfaatan analitik data dan Artificial Intelligence untuk membantu perusahaan memahami data penjualan, mengidentifikasi pola, dan mendukung pengambilan keputusan bisnis.
 
-## Cara menjalankan
+### Pertemuan 2 — High Performance Computing (HPC)
+Membahas konsep komputasi berkinerja tinggi melalui benchmark LINPACK dan simulasi evakuasi. Studi kasus ini menunjukkan bagaimana kemampuan komputasi dapat dimanfaatkan untuk menyelesaikan permasalahan yang membutuhkan pemrosesan data dan perhitungan secara intensif.
 
-Disarankan menggunakan Python 3.10 atau 3.11 di virtual environment.
+### Pertemuan 3 — Geographic Information System (GIS)
+Membahas penerapan Sistem Informasi Geografis untuk pengelolaan informasi lokasi gerai, aset, dan tutupan lahan. Data geografis digunakan untuk membantu analisis lokasi dan penyajian informasi berbasis wilayah.
 
-```bash
-python -m venv .venv
+### Pertemuan 4 — Introduction to Machine Learning
+Membahas pengenalan konsep dasar Machine Learning, cara kerja model dalam mempelajari pola dari data, serta penerapannya untuk membantu menyelesaikan permasalahan melalui pendekatan berbasis data.
+
+### Pertemuan 5 — Interaksi Manusia dan Komputer (IMK) dan Visualisasi
+Membahas penyajian informasi melalui visualisasi data dan dashboard penjualan. Tujuannya adalah membuat informasi lebih mudah dipahami oleh pengguna serta mendukung proses analisis dan pengambilan keputusan.
+
+### Pertemuan 6 — Artificial Intelligence untuk Deteksi Deforestasi
+Membahas pemanfaatan Artificial Intelligence untuk membantu mendeteksi deforestasi atau perubahan tutupan hutan. Pendekatan berbasis data digunakan untuk mendukung pemantauan lingkungan dan identifikasi perubahan lahan.
+
+## Teknologi yang Digunakan
+- Python
+- Artificial Intelligence (AI)
+- Machine Learning
+- Analisis dan visualisasi data
+- Sistem Informasi Geografis (GIS)
+- Git dan GitHub
+
+## Struktur Repository
+
+```text
+Tugas-Machine-Learning/
+├── README.md
+├── Pertemuan-1/
+│   └── file_program.py
+├── Pertemuan-2/
+│   └── file_program.py
+├── Pertemuan-3/
+│   └── file_program.py
+├── Pertemuan-4/
+│   └── file_program.py
+├── Pertemuan-5/
+│   └── file_program.py
+└── Pertemuan-6/
+    └── file_program.py
 ```
 
-Aktifkan environment:
-- Windows: `.venv\\Scripts\\activate`
-- macOS/Linux: `source .venv/bin/activate`
+*Catatan: Nama folder dan file dapat disesuaikan dengan nama yang digunakan pada repository.*
 
-Pasang dependensi umum:
+## Cara Menjalankan Program
 
-```bash
-pip install -r requirements.txt
-```
-
-Lalu jalankan salah satu file, misalnya:
+1. Pastikan Python sudah terinstal di komputer.
+2. Unduh atau clone repository ini ke komputer.
+3. Buka folder pertemuan yang ingin dijalankan.
+4. Buka terminal pada folder tersebut.
+5. Jalankan program menggunakan perintah berikut:
 
 ```bash
-python Pertemuan_1_Analitik_AI_PT_Maju_Bersama.py
+python file_program.py
 ```
 
-Catatan:
-- Pertemuan 2 mendukung MPI secara opsional melalui `mpi4py`; untuk mode paralel, pasang MPI dan `mpi4py` terlebih dahulu. Uji dengan ukuran kecil sebelum memakai ukuran benchmark besar.
-- Pertemuan 6 mencoba memakai PyTorch jika tersedia; bila tidak, perilaku mengikuti fallback yang ada di kode sumber. Jika perlu menjalankan bagian CNN, pasang PyTorch yang cocok dengan perangkat.
-- Data pada studi kasus yang dibuat secara sintetis bukan data asli perusahaan atau data lapangan.
-- Kode dipecah dari notebook yang diberikan; dependensi khusus tambahan mungkin diperlukan jika ingin mengaktifkan seluruh opsi opsional.
+6. Amati hasil keluaran program sesuai dengan studi kasus pada pertemuan terkait.
 
-## Upload ke GitHub
+Apabila program menggunakan library tambahan, instal terlebih dahulu sesuai kebutuhan program.
 
-1. Buat repository baru di GitHub, misalnya `studi-kasus-machine-learning`.
-2. Ekstrak ZIP ini.
-3. Buka folder hasil ekstrak, lalu jalankan:
+## Tujuan Pembelajaran
+1. Memahami penerapan teknologi komputasi dan Artificial Intelligence dalam berbagai studi kasus.
+2. Mengenal konsep dasar Machine Learning dan analisis data.
+3. Mengimplementasikan solusi sederhana menggunakan bahasa pemrograman Python.
+4. Memahami pemanfaatan visualisasi data dan informasi geografis.
+5. Melatih kemampuan menyusun, mendokumentasikan, dan mengelola kode program menggunakan GitHub.
 
-```bash
-git init
-git add .
-git commit -m "Tambah 6 studi kasus machine learning"
-git branch -M main
-git remote add origin https://github.com/USERNAME/studi-kasus-machine-learning.git
-git push -u origin main
-```
+## Penutup
+Repository ini disusun sebagai dokumentasi tugas enam pertemuan untuk menunjukkan pemahaman terhadap materi yang dipelajari serta penerapannya dalam bentuk program dan studi kasus. Diharapkan kumpulan tugas ini dapat menjadi sarana pembelajaran dalam memahami penggunaan teknologi komputasi, analisis data, AI, dan Machine Learning untuk menyelesaikan berbagai permasalahan.
 
-Ganti `USERNAME` dengan username GitHub sendiri. Jika repository dibuat dengan README dari GitHub, ikuti petunjuk GitHub untuk menyelaraskan repository lokal terlebih dahulu.
+---
+
+**Mata Kuliah:** Machine Learning  
+**Nama:** Algedian Syahtria Wangsa  
+**Institusi:** Universitas Bengkulu (UNIB)
